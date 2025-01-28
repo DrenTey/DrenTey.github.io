@@ -77,7 +77,6 @@ gap: 10%;
 }
 #current-section a {  text-decoration:underline;
   color: var(--textcolor1);
-  font-weight:bold;
 }
 @media only screen and (max-width:600px)
 {
