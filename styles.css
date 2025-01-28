@@ -1,9 +1,63 @@
+:root {
+  --textcolor1: black;
+  --backgroundcolor1: #fff9f0;
+  --backgroundcolor2:#fff2db;
+}
+* {
+  box-sizing:border-box;
+}
 body {
-  background-color: #fff9f0
+  background-color:  var(--backgroundcolor1);
+  font-family: Calibri;
 }
 #welcome-section  {
-background-color: #fff2db;
+background-color: var(--backgroundcolor2);
 border-radius: 10%;
 font-family:castellar;
 text-align:center;
+height:100vh;
+font-size: 1.8rem;
+}
+#welcome-section h1 {
+padding: 20% 10% 0% 10%;
+}
+#navbar {
+  display:grid;
+  position:fixed;
+  top:0;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  width: 100%;
+  column-gap: 1px;
+   background: var(--backgroundcolor1);
+}
+#navbar a {
+text-decoration:none;
+color: var(--textcolor1);
+}
+#navbar a:hover {
+background-color: var(--backgroundcolor2);
+color: var(--textcolor1);
+}
+#navbar div {
+  border: 2px solid var(--textcolor1);
+  border-radius:5%;
+  background: var(--backgroundcolor1);
+  text-align:center; 
+}
+#navbar div:nth-of-type(1) {
+  border: 0;
+  background: var(--backgroundcolor1);
+  font-family:forte; 
+}
+
+@media only screen and (max-width:600px)
+{
+  #navbar {
+  display:grid;
+  position:fixed;
+  top:0;
+  grid-template-columns:auto;
+  width: 100%;
+
+}
 }
