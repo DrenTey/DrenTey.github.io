@@ -51,7 +51,8 @@ color: var(--textcolor1);
   font-family:forte; 
 }
 .CCfprojects {
-  display:grid;  grid-template-columns: 40% 40% ;
+  display:grid;  
+  grid-template-columns: 1fr 1fr ;
 justify-content:space-around;
 gap: 10%;
   width:98%;
